@@ -17,7 +17,7 @@ class Settings extends Component {
     const { setDisableBalanceOnEdit } = this.props;
     setDisableBalanceOnEdit();
   };
-  allowregistrationChange = () => {
+  allowRegistrationChange = () => {
     const { setAllowRegistration } = this.props;
     setAllowRegistration();
   };
@@ -45,7 +45,7 @@ class Settings extends Component {
                 <input
                   type='checkbox'
                   name='allowRegistration'
-                  chaecked={!!allowRegistration}
+                  checked={!!allowRegistration}
                   onChange={this.allowRegistrationChange}
                 />
               </div>
@@ -54,7 +54,7 @@ class Settings extends Component {
                 <input
                   type='checkbox'
                   name='disableBalanceOnAdd'
-                  chaecked={!!disableBalanceOnAdd}
+                  checked={!!disableBalanceOnAdd}
                   onChange={this.disableBalanceOnAddChange}
                 />
               </div>
@@ -63,7 +63,7 @@ class Settings extends Component {
                 <input
                   type='checkbox'
                   name='disableBalanceOnEdit'
-                  chaecked={!!disableBalanceOnEdit}
+                  checked={!!disableBalanceOnEdit}
                   onChange={this.disableBalanceOnEditChange}
                 />
               </div>

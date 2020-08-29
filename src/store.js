@@ -21,6 +21,8 @@ firebase.initializeApp(firebaseConfig);
 
 // Initialize other services on firebase instance
 const firestore = firebase.firestore(); // <- needed if using firestore
+const settings = { timestampsInSnapshots: true };
+firestore.settings(settings);
 
 // react-redux-firebase config
 const rrfConfig = {
